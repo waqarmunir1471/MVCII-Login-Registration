@@ -1,0 +1,25 @@
+@using MVCII_Login_Registration
+@model Login
+<div class="container">
+    <div class="col-lg-12">
+        <form asp-action="Login" method="post" class="form-group col-lg-12">
+            <h1>Login</h1>
+            <div class="col-lg-12">
+                <p>
+                    <p><span asp-validation-for="LoginEmail" class="text-danger"></span></p>
+                    <label asp-for="LoginEmail"></label>
+                    <input asp-for="LoginEmail" class="form-control">
+                </p>
+                <p>
+                    <p><span asp-validation-for="LoginPassword" class="text-danger"></span></p>
+
+                    <label asp-for="LoginPassword"></label>
+                    <input asp-for="LoginPassword" class="form-control">
+                </p>
+                <p>
+                    <input type="submit" class="btn btn-info btn-lg">
+                </p>
+            </div>
+        </form>
+    </div>
+</div>
